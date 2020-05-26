@@ -1,7 +1,7 @@
 // @desc    Get all bootcamps
 // @route   Get /api/v1/bootcamps
 // @access  Public
-module.exports.getBootcamp = (req, res, next) => {
+module.exports.getBootcamps = (req, res, next) => {
     res.status(200).json({ success: true, msg: 'Show all bootcamps'});
 }
 
@@ -9,7 +9,7 @@ module.exports.getBootcamp = (req, res, next) => {
 // @desc    Get single bootcamps
 // @route   Get /api/v1/bootcamps/:id
 // @access  Public
-module.exports.getBootCamp = (req, res, next) => {
+module.exports.getBootcamp = (req, res, next) => {
     res.status(200).json({ success: true, msg: `Show bootcamps ${req.params.id}`});
 }
 
